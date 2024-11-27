@@ -1,189 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Ecommerce Site</title>
-</head>
-<body>
-  <!---------HEADER--------->
-<header id="navbar" class= "bg-yellow-200" >
-    <!--__Nav__-->
-    <nav class="flex-col items-center py-6 p-10">
-       <div >
-       <div class="shadow-md flex justify-between">
-        <div class="shadow-md"><span class="font-extrabold text-2xl">مَلابِسي</span>
-            <br><span class="font-thin italic text-sm text-gray-500 ">malaabisi</span></div>
-        <div class="hidden md:flex font-semibold space-x-6">
+    <!-- daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!---------HEADER--------->
+    <header id="navbar" class="bg-yellow-200">
+    
+      <!--__Nav__-->
+      <nav class="flex-col items-center py-6 px-10">
+        <div class="shadow-md flex justify-between items-center">
+          <div>
+            <span class="font-extrabold text-2xl">مَلابِسي</span><br />
+            <span class="font-thin italic text-sm text-gray-500">malaabisi</span>
+          </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex font-semibold space-x-6">
             <a href="#" class="text-black hover:text-yellow-600 transition">Home</a>
             <a href="#" class="text-black hover:text-yellow-600 transition">Shop</a>
             <a href="#" class="text-black hover:text-yellow-600 transition">Features</a>
             <a href="#" class="text-black hover:text-yellow-600 transition">Contact</a>
           </div>
+          <!-- Desktop Actions -->
           <div class="hidden md:flex items-center space-x-4">
-           
             <a href="#" class="relative text-black hover:text-orange-600">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.5 8h13l-1.546 11.34a2 2 0 01-1.988 1.66H9.034a2 2 0 01-1.987-1.66L5.5 8zm6.5 4v8m4-8v8m-8-8v8" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8V6a4 4 0 118 0v2" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.5 8h13l-1.546 11.34a2 2 0 01-1.988 1.66H9.034a2 2 0 01-1.987-1.66L5.5 8zm6.5 4v8m4-8v8m-8-8v8"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 8V6a4 4 0 118 0v2"
+                />
               </svg>
             </a>
-           <!--  log-->
             <a href="#" class="px-4 py-2 bg-yellow-500 text-white rounded-full hover:bg-orange-500 transition">
               Log In
             </a>
           </div>
-          
-       </div>
-       </div>   
-</nav>
- <!--__Banner__-->
-<banner class="flex justify-around ">
-    <div>
-        <img src="images/Peaky Blinders.png" alt="model-1">
-    </div>
-    <div class=" mt-40 ">
-        <div><h1 class="text-3xl font-bold font-serif">Discover and <br>Find Your Own Fashion!</h1>
-            <p class="font-semibold text-xl text-gray-600 mt-8">Explore our curated collection of <br> stylish clothing and accessories tailored <br>to your unique taste.</p></div>
-        <div class="mt-14">
-              <a href="#" class="px-6 py-3 bg-yellow-500 text-white rounded-full text-center font-semibold hover:bg-orange-500 transition duration-300 shadow-lg">
-                Explore Now
-              </a>   
-        </div>
-    </div>
-</banner>
-</header>
-<section class="container mx-auto px-5 py-20 bg-yellow-100">
-    <!-- Section Title -->
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Our Product</h2>
-    
-    <!-- Buttons -->
-    <div class="flex justify-center space-x-4 mb-8">
-      <button class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-full hover:bg-orange-500 transition">
-        Sell
-      </button>
-      <button class="px-4 py-2  bg-yellow-500 text-white text-sm rounded-full hover:bg-orange-500 transition">
-        Hot
-      </button>
-      <button class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-full  hover:bg-orange-500 transition">
-        New Arrival
-      </button>
-      <button class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-full  hover:bg-orange-500 transition">
-        Accessories
-      </button>
-    </div>
-
-    <!-- Product -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- product list -->
-      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden">
-        <img src="model-t-shirt.png" alt="Product" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold text-gray-800">Product Name</h3>
-          <p class="text-orange-500 text-lg">★★★★☆</p>
-          <p class="text-indigo-600 italic font-extrabold">Rs.1240</p>
-        </div>
-      </div>
-      
-      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden">
-        <img src="model-jacket.png" alt="Product" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold text-gray-800">Product Name</h3>
-          <p class="text-orange-500 text-lg">★★★★☆</p>
-          <p class="text-indigo-600 italic font-extrabold">Rs.2999</p>
-        </div>
-      </div>
-      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden">
-        <img src="model-6-jacket.png" alt="Product" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold text-gray-800">Product Name</h3>
-          <p class="text-orange-500 text-lg">★★★★☆</p>
-          <p class="text-indigo-600 italic font-extrabold">Rs.799</p>
-        </div>
-      </div>
-      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden">
-        <img src="model-3-woolen muffler.png" alt="Product" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold text-gray-800">Product Name</h3>
-          <p class="text-orange-500 text-lg">★★★☆☆</p>
-          <p class="text-indigo-600 italic font-extrabold">Rs.1200</p>
-        </div>
-      </div>
-      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden">
-        <img src="model-4-jeans.png" alt="Product" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold text-gray-800">Product Name</h3>
-          <p class="text-orange-500 text-lg">★★★★★</p>
-          <p class="text-indigo-600 italic font-extrabold">Rs.3599</p>
-        </div>
-      </div>
-      <div class="bg-yellow-200 shadow-md rounded-lg overflow-hidden">
-        <img src="basic tee.jpg" alt="Product" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold text-gray-800">Product Name</h3>
-          <p class="text-orange-500 text-lg">★★★☆☆</p>
-          <p class="text-indigo-600 italic font-extrabold">Rs.1199</p>
-        </div>
-      </div>
-    </div>
-</section>
-<!--footer-->
- <footer class="bg-yellow-400"> 
-   <div class="justify-center text-center ">
-    <h1 class="font-extrabold text-2xl shadow-sm">مَلا  بِسي</h1>
-   </div>
-   <div class="flex-col">
-    <div class="hidden md:flex font-semibold space-x-6 justify-center mt-7 ">
-      <a href="#" class="text-black hover:text-yellow-600 transition">Home</a>
-      <a href="#" class="text-black hover:text-yellow-600 transition">Shop</a>
-      <a href="#" class="text-black hover:text-yellow-600 transition">Features</a>
-      <a href="#" class="text-black hover:text-yellow-600 transition">Contact</a>
-    </div>
-    <div class="flex gap-7 justify-center mt-5 ">
-      
-<!--fb--><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-  <path d="M9.998 12h4.002v7h3V12h2.507l.495-3h-3V7c0-.83.672-1.5 1.5-1.5h1.5V3h-2.5c-2.485 0-4.5 2.015-4.5 4.5v1.5H10v3z" /></svg></a>
-      
-  <!--Twitter--><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-            <path d="M23.994 4.585a9.917 9.917 0 01-2.828.775 4.933 4.933 0 002.163-2.724 9.866 9.866 0 01-3.127 1.195A4.925 4.925 0 0016.616 3c-2.732 0-4.944 2.205-4.944 4.924 0 .385.045.762.13 1.124A14.012 14.012 0 011.648 3.158a4.92 4.92 0 001.527 6.572 4.896 4.896 0 01-2.24-.618v.062a4.923 4.923 0 003.95 4.826 4.922 4.922 0 01-2.237.084 4.927 4.927 0 004.6 3.419 9.876 9.876 0 01-6.105 2.103c-.395 0-.784-.023-1.17-.067a13.936 13.936 0 007.548 2.211c9.057 0 14.004-7.508 14.004-14.007 0-.213-.004-.426-.015-.637A10.036 10.036 0 0024 4.585z" />
-   </svg> </a>
-    
-  <!--insta--><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-    <path d="M24 4.56v14.91a4.5 4.5 0 01-4.5 4.5H4.5A4.5 4.5 0 010 19.47V4.56A4.5 4.5 0 014.5 0h15a4.5 4.5 0 014.5 4.56zM18 12a6 6 0 11-6-6 6 6 0 016 6zm4-7.44A1.44 1.44 0 1120.56 3 1.44 1.44 0 0122 4.56z" />
-  </svg>
-  </a>    
-  <!--linkedIn--><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-    <path d="M19 3A2 2 0 0121 5v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-6 8h-3v7h3v-7zm-1.5-4.5a1.5 1.5 0 10-.001 2.999A1.5 1.5 0 0011.5 6.5zM18 12h-3v7h3v-7zm-3.75-4.5h-.25v1.25h.25V7.5z" />
-  </svg>
-  </a>
-  <!--YT--><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-    <path d="M23.499 6.203a2.9 2.9 0 00-2.045-2.05C19.472 3.667 12 3.667 12 3.667s-7.472 0-9.454.486a2.9 2.9 0 00-2.045 2.05A30.538 30.538 0 000 12a30.538 30.538 0 00.501 5.797 2.9 2.9 0 002.045 2.05c1.982.487 9.454.487 9.454.487s7.472 0 9.454-.487a2.9 2.9 0 002.045-2.05A30.538 30.538 0 0024 12a30.538 30.538 0 00-.501-5.797zM9.833 15.233V8.767L15.5 12l-5.667 3.233z" />
-  </svg>
-  </a>
-      </div>
-      <div class="bg-yellow-400 justify-center text-center p-5 max-w-md w-full ">
-        <form class="flex  gap-2 ">
-          <input 
-            type="email" 
-            placeholder="Enter your email" 
-            class="flex-grow px-4 py-2 border border-yellow-500 rounded-lg focus:outline-none focus:ring focus:ring-yellow-100"
-            required
-          >
-          <button 
-            type="submit" 
-            class="px-4 py-2 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-orange-500 transition">
-            Subscribe
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden block text-gray-700 focus:outline-none" id="menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           </button>
-        </form>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden mt-4 space-y-2 md:hidden" id="mobile-menu">
+          <a href="#" class="block text-black hover:text-yellow-600 transition">Home</a>
+          <a href="#" class="block text-black hover:text-yellow-600 transition">Shop</a>
+          <a href="#" class="block text-black hover:text-yellow-600 transition">Features</a>
+          <a href="#" class="block text-black hover:text-yellow-600 transition">Contact</a>
+          <div class="flex items-center space-x-4">
+            <a href="#" class="relative text-black hover:text-orange-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.5 8h13l-1.546 11.34a2 2 0 01-1.988 1.66H9.034a2 2 0 01-1.987-1.66L5.5 8zm6.5 4v8m4-8v8m-8-8v8"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 8V6a4 4 0 118 0v2"
+                />
+              </svg>
+            </a>
+            <a href="#" class="px-4 py-2 bg-yellow-500 text-white rounded-full hover:bg-orange-500 transition">
+              Log In
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!--__Banner__-->
+      <section class="flex flex-col-reverse md:flex-row justify-around items-center py-10 px-6">
+        <!-- Image -->
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img src="images/Peaky Blinders.png" alt="model-1" class="max-w-full h-auto" />
+        </div>
+        <!-- Text Content -->
+        <div class="mt-10 md:mt-0 md:w-1/2 text-center md:text-left">
+          <h1 class="text-3xl md:text-4xl font-bold font-serif leading-snug">
+            Discover and <br />Find Your Own Fashion!
+          </h1>
+          <p class="font-semibold text-lg md:text-xl text-gray-600 mt-6">
+            Explore our curated collection of <br />
+            stylish clothing and accessories tailored <br />
+            to your unique taste.
+          </p>
+          <div class="mt-10">
+            <a
+              href="#"
+              class="inline-block px-6 py-3 bg-yellow-500 text-white rounded-full text-center font-semibold hover:bg-yellow-700 mb-5 transition duration-300 shadow-lg"
+            >
+              Explore Now
+            </a>
+          </div>
+        </div>
+      </section>
+      
+    </header>
+    <section class="px-6 py-12 bg-yellow-100">
+      <!-- Section Title -->
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Products</h2>
+    
+      <!-- Filter Buttons -->
+      <div class="grid grid-cols-2  md:mx-40 mx-4 justify-center gap-4 mb-10">
+        <button class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-full hover:bg-orange-500 transition">
+          Sell
+        </button>
+        <button class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-full hover:bg-orange-500 transition">
+          Hot
+        </button>
+        <button class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-full hover:bg-orange-500 transition">
+          New Arrival
+        </button>
+        <button class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-full hover:bg-orange-500 transition">
+          Accessories
+        </button>
       </div>
-   
+    
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product Cards -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/model-t-shirt.png" alt="T-shirt" class="w-full h-80  p-6">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">T-shirt</h3>
+            <p class="text-orange-500 text-lg">★★★★☆</p>
+            <p class="text-indigo-600 italic font-extrabold">Rs.1240</p>
+          </div>
+        </div>
+        
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ">
+          <img src="images/model-jacket.png" alt="Jacket" class="w-full h-80  p-6 ">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Jacket</h3>
+            <p class="text-orange-500 text-lg">★★★★☆</p>
+            <p class="text-indigo-600 italic font-extrabold">Rs.2999</p>
+          </div>
+        </div>
+        
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 p-6">
+          <img src="images/model-3-woolen muffler.png" alt="Woolen Muffler" class="w-full h-80 border rounded-lg">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Woolen Muffler</h3>
+            <p class="text-orange-500 text-lg">★★★★☆</p>
+            <p class="text-indigo-600 italic font-extrabold">Rs.799</p>
+          </div>
+        </div>
+        
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/model-6-jacket.png" alt="Jacket" class="w-full h-80 p-6">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Casual Jacket</h3>
+            <p class="text-orange-500 text-lg">★★★☆☆</p>
+            <p class="text-indigo-600 italic font-extrabold">Rs.4599</p>
+          </div>
+        </div>
+        
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 p-6">
+          <img src="images/model-4-jeans.png" alt="Jeans" class="w-full border  rounded-lg h-80 ">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Jeans</h3>
+            <p class="text-orange-500 text-lg">★★★★★</p>
+            <p class="text-indigo-600 italic font-extrabold">Rs.3599</p>
+          </div>
+        </div>
+        
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/basic tee.jpg" alt="Cotton-tee" class="w-full h-80 p-6">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Cotton-tee</h3>
+            <p class="text-orange-500 text-lg">★★★☆☆</p>
+            <p class="text-indigo-600 italic font-extrabold">Rs.1199</p>
+          </div>
+        </div>
       </div>
+    </section>
+    
+    
+    
+
+    <!-- footer -->
+    <footer class="footer bg-base-300 p-10 bg-yellow-400 text-yellow-950">
+      <nav>
+        <h6 class="footer-title font-extrabold underline">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title font-extrabold underline">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title font-extrabold underline">Social</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
     <!-- Copyright -->
-   <div class="bg-yellow-600 text-center mt-10">
-    <p class="text-sm text-white">© 2024 All Rights Reserved</p>
-   </div>
-  </footer>
-<!--/footer-->
-</body>
+    <div class="bg-yellow-600 text-center py-4">
+      <p class="text-sm text-white">© 2024 All Rights Reserved</p>
+    </div>
+    <!--/footer-->
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+    
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
 </html>
